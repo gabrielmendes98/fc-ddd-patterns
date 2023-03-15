@@ -39,10 +39,6 @@ export default class Customer {
     this.validate();
   }
 
-  get Address(): Address {
-    return this._address;
-  }
-
   changeAddress(address: Address) {
     this._address = address;
   }
@@ -64,6 +60,10 @@ export default class Customer {
 
   addRewardPoints(points: number) {
     this._rewardPoints += points;
+  }
+
+  get Address(): Address {
+    return this._address;
   }
 
   set Address(address: Address) {
