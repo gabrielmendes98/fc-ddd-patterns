@@ -11,6 +11,7 @@
   },
   "scripts": {
     "test": "npm run tsc -- --noEmit && jest",
+    "tsc": "tsc",
     "lint": "tslint -c tslint.json 'src/**/*.ts' --fix"
   }
 }
