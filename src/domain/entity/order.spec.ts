@@ -40,4 +40,13 @@ describe("Order unit tests", () => {
       const order = new Order("o1", "c1", [item]);
     }).toThrowError("Quantity must be greater than 0");
   });
+
+  it("should add an item", () => {
+    const item = new OrderItem("i1", "Item 1", 100, "p1", 2);
+    const order = new Order("o1", "c1", [item]);
+    const item2 = new OrderItem("i2", "Item 2", 200, "p2", 2);
+    order.addItem(item2);
+    expect(order.items.length).toBe(2);
+    expect(order.total()).toBe(600);
+  });
 });
