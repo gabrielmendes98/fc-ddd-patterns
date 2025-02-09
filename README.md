@@ -152,7 +152,7 @@ class CustomerRepository implements CustomerRepositoryInterface {
   - Repository Pattern
   - Unit of Work
 
-## 🔑 Key domains:
+## 🔑 Key domains
 
 - Customer management
 - Product catalog
